@@ -5,15 +5,6 @@ import { Time } from './components/Time';
 import { Rodape } from './components/Rodape';
 
 function App() {
-
-const [colaboradores, setColaboradores] = useState([])
-
-const aoNovoColaboradorAdicionado = (colaborador) => {
-  console.log(colaborador)
-  colaboradores.push(colaborador)
-  setColaboradores([...colaboradores,colaborador])
-}
-
 const times = [
   {
     nome: 'Programação',
@@ -51,6 +42,12 @@ const times = [
       corSecundaria: '#FFEEDF',
   }
 ]
+
+const [colaboradores, setColaboradores] = useState([])
+
+const aoNovoColaboradorAdicionado = (colaborador) => {
+  setColaboradores([...colaboradores,colaborador])
+}
 
   return (
     <div className="App">
