@@ -50,6 +50,7 @@ export const Formulario = (props) => {
                     aoAlterado = {valor => setImagem(valor)}
                 />
                 <ListaSuspensa 
+                    obrigatorio={true}
                     label="Time" 
                     itens = {props.times}
                     valor={time}
